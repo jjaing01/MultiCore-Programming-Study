@@ -11,7 +11,7 @@ using namespace chrono;
 #define CORE 8
 
 mutex my_l;
-int sum = 0;
+volatile int sum = 0;
 void worker(const int& number)
 {
 	for (auto i = 0; i < number; ++i)

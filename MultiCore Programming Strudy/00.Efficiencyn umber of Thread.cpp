@@ -16,9 +16,14 @@ void worker(const int& number)
 {
 	for (auto i = 0; i < number; ++i)
 	{
+		// 1. lock 사용
 		my_l.lock();
 		sum += 2;
 		my_l.unlock();
+
+		// 2. prefix atomic 사용 (32bit에서만 사용 가능)
+		//_asm lock add sum, 2;
+
 	}
 }
 int main()

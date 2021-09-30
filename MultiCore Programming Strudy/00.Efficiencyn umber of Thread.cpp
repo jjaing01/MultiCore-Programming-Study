@@ -2,6 +2,7 @@
 #include <chrono>
 #include <vector>
 #include <mutex>
+#include <atomic>
 
 using namespace std;
 using namespace chrono;
@@ -11,19 +12,16 @@ using namespace chrono;
 #define CORE 8
 
 mutex my_l;
-volatile int sum = 0;
+//volatile int sum = 0;
+atomic<int> sum = 0;
 void worker(const int& number)
 {
 	for (auto i = 0; i < number; ++i)
 	{
-		// 1. lock 사용
-		my_l.lock();
+		// 3. atomic template class 사용
+		//my_l.lock();
 		sum += 2;
-		my_l.unlock();
-
-		// 2. prefix atomic 사용 (32bit에서만 사용 가능)
-		//_asm lock add sum, 2;
-
+		//my_l.unlock();
 	}
 }
 int main()

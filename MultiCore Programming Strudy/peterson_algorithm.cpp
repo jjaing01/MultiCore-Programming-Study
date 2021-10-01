@@ -21,6 +21,8 @@ void p_lock(const int& t_id)
 	int other = 1 - t_id;
 	flag[t_id] = true;
 	victim = t_id;
+	//_asm mfence;								// 실행 순서 역전을 막는다.
+	atomic_thread_fence(memory_order_seq_cst);	// 실행 순서 역전을 막는다.
 	while ((flag[other] == true) && (t_id == victim));
 }
 

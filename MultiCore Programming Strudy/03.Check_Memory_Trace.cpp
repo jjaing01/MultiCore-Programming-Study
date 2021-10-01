@@ -15,6 +15,7 @@ void worker1()
 	for (int i = 0; i < SIZE; ++i)
 	{
 		x = i;
+		atomic_thread_fence(memory_order_seq_cst);
 		trace_y[i] = y;
 	}
 }
@@ -23,6 +24,7 @@ void worker2()
 	for (int i = 0; i < SIZE; ++i)
 	{
 		y = i;
+		atomic_thread_fence(memory_order_seq_cst);
 		trace_x[i] = x;
 	}
 }

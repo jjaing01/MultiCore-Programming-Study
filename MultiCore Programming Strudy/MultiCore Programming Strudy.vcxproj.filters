@@ -21,10 +21,13 @@
     <ClCompile Include="01.second_1uk_making.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="peterson_algorithm.cpp">
+    <ClCompile Include="02_1.peterson_algorithm.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="03.Check_Memory_Trace.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="02_2.Bakery_algorithm.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

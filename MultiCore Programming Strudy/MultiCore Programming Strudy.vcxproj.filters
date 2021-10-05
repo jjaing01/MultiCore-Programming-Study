@@ -30,5 +30,8 @@
     <ClCompile Include="02_2.Bakery_algorithm.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="04.cas_locking.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

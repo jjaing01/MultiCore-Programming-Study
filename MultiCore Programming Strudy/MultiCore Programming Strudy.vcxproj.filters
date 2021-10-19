@@ -39,5 +39,8 @@
     <ClCompile Include="06.SET(Fine synchronization).cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="07.SET(Optimistic synchronization).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

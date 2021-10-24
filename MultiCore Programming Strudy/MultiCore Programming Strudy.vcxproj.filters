@@ -45,5 +45,8 @@
     <ClCompile Include="08.SET(Lazy synchronization).cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="09.SET(SharedPoint_Lazy synchronization).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -54,5 +54,8 @@
     <ClCompile Include="11.QUEUE(coarse_grained).cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="12.QUEUE(Lock-Free).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

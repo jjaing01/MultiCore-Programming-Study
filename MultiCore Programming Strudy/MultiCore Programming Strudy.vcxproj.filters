@@ -60,5 +60,8 @@
     <ClCompile Include="13.STACK(coarse-grained synchronization).cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="14.STACK(Lock-Free).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
